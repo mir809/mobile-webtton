@@ -1,0 +1,122 @@
+.screen-header {
+  z-index: 88;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+
+  position: fixed;
+  top: 26px;
+  width: 100%;
+  box-sizing: border-box;
+
+  background-color: white;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.screen-header-title {
+  display: flex;
+  align-items: center;
+}
+.screen-header-title > h1 {
+  font-size: 23px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.cookie {
+  font-size: 32px;
+  font-weight: 600;
+
+  position: relative;
+}
+
+.fa-cookie-bite {
+  color: rgb(255, 166, 0);
+}
+
+.free-cookie {
+  position: absolute;
+  z-index: 5;
+  top: -5px;
+  left: 50px;
+
+  width: 80px;
+  height: 38px;
+  background-color: #2c2c2c;
+
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+}
+
+.free-cookie > span {
+  color: var(--green);
+  font-size: 15px;
+}
+
+.free-cookie_tail {
+  position: absolute;
+  z-index: 4;
+
+  width: 0;
+  height: 0;
+  border-bottom: 8px solid transparent;
+  border-top: 8px solid transparent;
+  border-left: 20px solid transparent;
+  border-right: 20px solid #2c2c2c;
+  top: 12px;
+  left: -35px;
+}
+
+.screen-header-icons {
+  font-size: 13px;
+}
+
+.screen-header-title > a:hover .free-cookie {
+  opacity: 1;
+}
+
+.screen-header-title > a:hover .fa-cookie-bite {
+  animation: cookieBigger 0.3s ease-in-out forwards;
+}
+
+@keyframes cookieBigger {
+  from {
+    transform: none;
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.screen-header-logo > img {
+  height: 32px;
+}
+
+.screen-header-title,
+.screen-header-logo,
+.screen-header-icons {
+  width: 33%;
+}
+
+.screen-header-logo {
+  display: flex;
+  justify-content: center;
+}
+.screen-header-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.my-cookie {
+  color: var(--green);
+  font-size: 15px;
+  margin-right: 20px;
+}

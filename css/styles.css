@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap");
+
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/week-bar.css";
+@import "components/keyboard.css";
+@import "components/search-var.css";
+@import "components/my-tab.css";
+@import "components/select-bar.css";
+
+@import "components/no-mobile.css";
+@import "components/splash-screen.css";
+@import "components/badge.css";
+
+/* screen */
+@import "screens/login.css";
+@import "screens/algorithm.css";
+@import "screens/thumbnail.css";
+@import "screens/end.css";
+@import "screens/searching.css";
+@import "screens/my.css";
+@import "screens/comment.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/log-out.css";
+
+body {
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  color: #2e363e;
+
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.main-screen {
+  padding-bottom: 80px;
+  transform: translateY(88.8px);
+  z-index: 0;
+}
+
+.end-select-bar {
+  position: sticky;
+  top: 0;
+
+  padding-bottom: 20px;
+
+  background-color: white;
+  z-index: 3;
+}
+
+.hidden {
+  visibility: hidden;
+}

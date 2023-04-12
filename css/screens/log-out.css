@@ -1,0 +1,62 @@
+.log-out-back {
+  filter: blur(3px);
+}
+
+.logOut-page {
+  position: fixed;
+  top: 0px;
+  z-index: 777;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logOut-box {
+  background-color: white;
+  border: 3px solid var(--green);
+  border-radius: 10px;
+  width: 350px;
+  height: 250px;
+
+  font-size: 24px;
+  color: black;
+}
+
+.logOut-question {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 0.5px solid var(--green);
+
+  font-weight: 600;
+}
+
+.logOut-answer {
+  height: 25%;
+  width: 100%;
+
+  display: flex;
+}
+
+.logOut-answer > div {
+  width: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.logOut-answer > div > a:hover {
+  color: var(--green);
+}
+.logOut-answer div:first-child {
+  border-right: 0.5px solid var(--green);
+}
