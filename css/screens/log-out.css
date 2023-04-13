@@ -54,6 +54,10 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
+.logOut-answer > div > a {
+  padding: 20px;
+}
+
 .logOut-answer > div > a:hover {
   color: var(--green);
 }
