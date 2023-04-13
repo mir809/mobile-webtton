@@ -37,3 +37,7 @@
 .search-data > div:nth-child(2) {
   color: rgba(0, 0, 0, 0.3);
 }
+
+.search-data > div:nth-child(2):hover {
+  cursor: pointer;
+}
