@@ -157,3 +157,19 @@
   background-color: gray;
   color: white;
 }
+
+.icons-row:nth-child(1) .icons-column:nth-child(1):hover > i {
+  animation: searchIcon 1s linear infinite;
+}
+.icons-row:nth-child(2) .icons-column:nth-child(3):hover > i {
+  animation: cogRotate 2s ease-in-out infinite;
+}
+
+@keyframes cogRotate {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
