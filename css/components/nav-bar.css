@@ -110,3 +110,9 @@
     transform: scale(1.2);
   }
 }
+
+.sub-tab-nav .nv-btn {
+  transform: none;
+  opacity: 1;
+  animation: none;
+}
